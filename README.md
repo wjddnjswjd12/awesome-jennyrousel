@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+## HOW TO USE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+<JennyCarousel
+    SLIDE_WIDTH={300}
+    SLIDE_HEIGHT={300}
+    SLIDE_MARGIN={5}
+    NUM_OF_DATAS={10}
+    NUM_OF_SLIDES={4}
+    BACKGROUND_COLOR={"white"}
+    >
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+<JennyCarousel/>
+```
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+- SLIDE_WIDTH : width of single slide <br>
+- SLIDE_HEIGHT : height of single slide <br>
+- SLIDE_MARGIN : gap between slides `gap=SLIDE_MARGIN*2` <br>
+- NUM_OF_DATAS : num of total slides <br>
+- NUM_OF_SLIDES : num of slides you want to show at once <br>
+- BACKGROUND_COLOR : background color of the slide <br>
+- BUTTON_TYPE: selecting the next, prev button to be horizontal to the carousel wrapper or vertical. If wanting vertical, just give the prop as `BUTTON_TYPE="VERTICAL"`
 
-### `yarn start`
+<br><br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Default Setting ✔
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+If you don't give specific value, the default setting will be like this below:
 
-### `yarn test`
+```
+NUM_OF_DATAS = 8,
+SLIDE_WIDTH = 308,
+SLIDE_HEIGHT = 540,
+SLIDE_MARGIN = 5,
+NUM_OF_SLIDES = 4,
+BACKGROUND_COLOR = "#fff",
+BUTTON_SIZE = "20",
+FONT_SIZE = "15",
+BUTTON_TYPE = "HORIZONTAL",
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br><br>
 
-### `yarn build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 사용법
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+<JennyCarousel
+    SLIDE_WIDTH={300}
+    SLIDE_HEIGHT={300}
+    SLIDE_MARGIN={5}
+    NUM_OF_DATAS={10}
+    NUM_OF_SLIDES={4}
+    BACKGROUND_COLOR={"white"}
+    >
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+<JennyCarousel/>
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br>
 
-### `yarn eject`
+- SLIDE_WIDTH : 한 슬라이드가 가질 width 크기 <br>
+- SLIDE_HEIGHT : 한 슬라이드가 가질 height 크기 <br>
+- SLIDE_MARGIN : 슬라이드 사이사이의 넓이 `gap=SLIDE_MARGIN*2` <br>
+- NUM_OF_DATAS : 총 슬라이드 수, 캐로셀에 적용할 총 데이터 수 <br>
+- NUM_OF_SLIDES : 한 가로축에 보일 슬라이드 개수 <br>
+- BACKGROUND_COLOR : 캐로셀 슬라이드 전체 배경색 <br>
+- BUTTON_TYPE: 캐로셀 기준 버튼을 양 옆에 둘 지 위에 둘지 정하는 type. 버튼을 캐로셀 위에 두고싶다면 오른쪽의 설정을 props에 넘기면 됨 `BUTTON_TYPE="VERTICAL"`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<br><br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 기본 세팅 ✔
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+직접 넘길 props 값을 정하지 않으면 기본적으로 아래의 세팅이 적용됩니다.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+NUM_OF_DATAS = 8,
+SLIDE_WIDTH = 308,
+SLIDE_HEIGHT = 540,
+SLIDE_MARGIN = 5,
+NUM_OF_SLIDES = 4,
+BACKGROUND_COLOR = "#fff",
+BUTTON_SIZE = "20",
+FONT_SIZE = "15",
+BUTTON_TYPE = "HORIZONTAL",
+```
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br><br>
